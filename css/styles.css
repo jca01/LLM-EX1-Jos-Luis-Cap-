@@ -1,0 +1,82 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.select {
+    padding: 10px;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+.second h1 {
+    font-family: 'Lato', sans-serif;
+}
+.centerBox {
+    border: 1px solid orange;
+    text-decoration: none;
+} 
+.icons {
+    display: flex;
+}
+nav {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+} 
+.menu {
+    position: relative;
+}
+.menu:hover .submenu {
+    display: block;
+    transition: opacity 0.5s ease;
+}
+.submenu {
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 5;
+}
+.submenu a {
+    display: block;
+}
+
+main {
+    width: 100px;
+    display: flex;
+}
+.central img {
+    width: 600px;
+    display: flex;
+
+    position: absolute;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: start;
+    width: 70%;
+} 
+.infoBox img {
+    width: 200px;
+}
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
