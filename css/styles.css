@@ -11,13 +11,15 @@
     color: grey;
     align-items: center;
     border-bottom: 1px solid grey;
+    position: sticky;
 }
 .select {
     padding: 10px;
 }
-.second {
+.second , .first {
     display: flex;
     justify-content: space-between;
+    position: sticky;
 }
 .second h1 {
     font-family: 'Lato', sans-serif;
@@ -31,12 +33,16 @@
 }
 nav {
     display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: 24px;
 }
 a {
     text-decoration: none;
     display: inline-block;
     padding: 0.8rem 2rem;
 } 
+
 .menu {
     position: relative;
 }
@@ -60,6 +66,9 @@ main {
     width: 100px;
     display: flex;
 }
+.card h2 {
+    color: pink;
+}
 .central img {
     width: 600px;
     display: flex;
@@ -75,8 +84,58 @@ main {
 .infoBox img {
     width: 200px;
 }
+.priceBox {
+    display: flex;
+}
+.priceBox span {
+    text-decoration:line-through;
+}
+.priceBox button{
+    background-color: orange;
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+}
+
 .flex-footer {
     display: flex;
     justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid grey;
 }
+.flex-footer:nth-child(1) {
+    color: white;
+    font-size: 24px;
+    font-family: myriad pro;
+    font-weight: bold;
+}
+.flex-footer p {
+    font-size: 18px;
+    padding: 10px;
+}
+.pay {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+@media (max-width 768px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+        width: 70%;
+        
+    }
+}
+@media (max-width 580px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: start;
+        width: 70%;
+        
+    }
+}
+    
 
